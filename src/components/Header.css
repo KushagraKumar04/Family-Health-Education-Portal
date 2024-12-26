@@ -4,17 +4,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  transition: background-color 0.3s ease;
+  background: linear-gradient(to bottom, #4CAF50, rgba(0, 74, 223, 0.719)); /* Gradient fading from blue to transparent */
   color: rgba(255, 255, 255, 0.801);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Improved shadow */
-}
-
-.header.transparent {
-  background: transparent;
-}
-
-.header.scrolled {
-  background: linear-gradient(to bottom, #4CAF50, rgba(0, 74, 223, 0.719)); /* Gradient fading from blue to transparent */
 }
 
 /* Logo Section */
