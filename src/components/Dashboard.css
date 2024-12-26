@@ -1,0 +1,120 @@
+/* Root Variables for Colors */
+:root {
+  --primary-color: #4CAF50; /* Soothing green */
+  --secondary-color: #007BFF; /* Blue */
+  --highlight-color: #FF6F61; /* Coral for highlights */
+  --background-color: #F3F9F6; /* Light background */
+  --text-color: #333; /* Dark text */
+  --muted-text-color: #666; /* Light gray */
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Dashboard Styling */
+.dashboard {
+  padding: 0px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome Section Styling */
+.welcome {
+  text-align: center;
+  padding: 30px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0px;
+  margin-bottom: 30px;
+}
+
+.welcome h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Dropdown Button Styling */
+.dropdown-button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dropdown-button:hover {
+  background-color: var(--highlight-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Dropdown List Styling */
+.dropdown-list {
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  padding: 10px 20px;
+  list-style-type: none;
+}
+
+.dropdown-list li {
+  padding: 8px 0;
+}
+
+.dropdown-list li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.dropdown-list li a:hover {
+  color: var(--highlight-color);
+  text-decoration: underline;
+}
+
+/* Show the dropdown when the button is hovered */
+.dropdown-button:hover + .dropdown-list,
+.dropdown-list:hover {
+  display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdown-button {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 18px;
+  }
+}

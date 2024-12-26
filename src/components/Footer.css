@@ -1,0 +1,14 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #100cdf;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    /* width: 100%; */
+  }
+  
+  .footer-content {
+    font-size: 14px;
+  }
+  

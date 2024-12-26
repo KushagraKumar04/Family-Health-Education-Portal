@@ -1,0 +1,137 @@
+/* General Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(to bottom, #4CAF50, rgba(0, 74, 223, 0.719)); /* Gradient fading from blue to transparent */
+  color: rgba(255, 255, 255, 0.801);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Improved shadow */
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+}
+
+/* Navigation Menu */
+.nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover Effect for Navigation Links (except Login button) */
+.nav a:hover:not(.login-button) {
+  color: red; /* Change text to red on hover */
+}
+
+/* Login Button Styling */
+.nav .login-button {
+  color: white;
+  background-color: #004adf; /* Blue background for the login button */
+  padding: 5px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav .login-button:hover {
+  background-color: #afdf00; /* Change background color to green on hover */
+  color: white; /* Keep the text white */
+}
+
+/* Actions Section */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.actions input {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.actions input:focus {
+  border-color: #61dafb;
+}
+
+.actions button {
+  padding: 8px 15px;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 20px;
+  color: #004adf;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.actions button:hover {
+  background-color: #afdf00;
+  color: white;
+}
+
+/* Language Selector */
+.language-selector {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: white;
+  color: #004adf;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.language-selector:hover {
+  border-color: #61dafb;
+}
+
+/* Add hover effect for language selector */
+.language-selector:focus {
+  border-color: #61dafb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
