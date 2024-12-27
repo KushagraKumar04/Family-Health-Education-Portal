@@ -14,8 +14,10 @@ const Dashboard = () => {
           <section className="welcome">
             <h2>Welcome to the Family Health Education Portal</h2>
             <p>
-              We're thrilled to have you here. Explore our valuable resources and educational materials to keep your family healthy!
-            </p>
+            Access reliable resources, expert guidance, and innovative tools to enhance your family's health and well-being. 
+            From practical tips on nutrition and exercise to personalized health plans and mental wellness strategies, 
+            we provide everything you need to make informed decisions and create a healthier, happier lifestyle for your loved ones.
+          </p>
           </section>
 
           {/* Buttons for Resources and Education */}

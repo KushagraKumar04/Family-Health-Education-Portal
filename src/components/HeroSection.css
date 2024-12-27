@@ -12,24 +12,24 @@
     max-width: 800px;
     padding: 40px;
     z-index: 1; /* Ensure the text is on top of the image */
-    color: #004adf;
+    color: #05445E;
     text-align: left;
   }
   
   .hero-content h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 50px;
   }
   
   .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-bottom: 30px;
   }
   
   .cta-button {
     padding: 12px 30px;
     font-size: 1.1rem;
-    background-color: #4CAF50; /* Green */
+    background-color: #05445E; /*Navy Blue  */
     color: white;
     border: none;
     border-radius: 5px;
@@ -38,7 +38,7 @@
   }
   
   .cta-button:hover {
-    background-color: #45a049;
+    background-color: #e73b3b;
   }
   
   .hero-image {

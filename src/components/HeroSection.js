@@ -18,9 +18,7 @@ function HeroSection() {
       <div className="hero-content">
         <h1>Empowering Families with Health Education</h1>
         <p>
-          Access reliable resources, expert guidance, and innovative tools to enhance your family's health and well-being. 
-          From practical tips on nutrition and exercise to personalized health plans and mental wellness strategies, 
-          we provide everything you need to make informed decisions and create a healthier, happier lifestyle for your loved ones.
+        We're thrilled to have you here. Explore our valuable resources and educational materials to keep your family healthy!
         </p>
         <button className="cta-button" onClick={handleScroll}>Get Started</button>
       </div>
