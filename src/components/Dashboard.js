@@ -31,7 +31,7 @@ const Dashboard = () => {
               Health Resources
             </button>
             {showResources && (
-              <ul className="dropdown-list">
+              <ul className="dropdown-list">  
                 <li><a href="/resources/health-tips">Health Tips</a></li>
                 <li><a href="/resources/nutrition">Nutrition</a></li>
                 <li><a href="/resources/mental-health">Mental Health</a></li>
